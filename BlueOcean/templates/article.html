@@ -1,0 +1,262 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+<body>
+
+    <div class="all">
+    {% block content %}
+      <div id="product_title">
+       <div class="container">
+                <div class="product_title">
+                    <div class="title_for_article">
+                        <ul class="tabs3 product_title products_categ">
+                            <li class="active" rel="tab1"> <span>სტატიები</span> <span class="next"></span><span>  მენეჯმენტი</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cls"></div>
+        </div>
+     <section class="book_product">
+            <div class="container">
+                <div class="article_in">
+                    <div class="article_left">
+                        <div class="article_img">
+                            <img src="img/4.jpg" alt="">
+                        </div>
+                      </div>
+                    {% for post in posts %}
+                    <div class="article_right">
+                        <div class="title_book">{{ post.title }}</div>
+                        <div class="article_idk">
+
+                        <p> {{ post.text }} </p> 
+                          {% endfor %}
+                        </div </div>
+                        <div class="social_icons_article">
+                            <img src="img/facebook.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="article_desc">
+               
+                </div>
+        </section>
+        
+            {% endblock %}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="cls"></div>
+        <section class="facebook_comments">
+            <div class="container">
+                <img src="img/comment.png" alt="">
+            </div>
+        </section>
+        <div class="cls"></div>
+
+        <section class="aseve">
+            <div class="container">
+                <div class="siaxleebi_in">
+                    <ul class="tabs2 int">
+                        <li class="active" rel="tab1">ასევე შეიძლება დაგაინტერესოდ</li>
+                    </ul>
+                    <div class="books_row int_row">
+
+                        <div class="book_item">
+                            <a href="#">
+                                <div class="book">
+                                    <div class="book_picture">
+                                        <img src="img/book1.png" alt="">
+                                    </div>
+                                    <div class="book_desc">
+                                        <span class="book_logo"></span>
+                                        <div class="book_title">
+                                            ლურჯი ოკეანის სტრატეგია
+                                        </div>
+                                        <div class="book_price">
+                                            <div class="books_new_price">
+                                                <span class="cash_price">14.</span> <span class="price_cash">50</span>
+                                                <span class="gel">ლ</span>
+                                            </div>
+                                            <div class="books_old_price">
+                                                <div class="old_line">
+                                                    <span class="cash_price">16.</span>
+                                                    <span class="gel">ლ</span>
+                                                </div>
+                                                <span class="price_cash_old">50</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="book_item">
+                            <a href="#">
+                                <div class="book">
+                                    <div class="book_picture">
+                                        <img src="img/book2.png" alt="">
+                                    </div>
+                                    <div class="book_desc">
+                                        <span class="book_logo"></span>
+                                        <div class="book_title">
+                                            ლურჯი ოკეანის სტრატეგია
+                                        </div>
+                                        <div class="book_price">
+                                            <div class="books_new_price">
+                                                <span class="cash_price">14.</span> <span class="price_cash">50</span>
+                                                <span class="gel">ლ</span>
+                                            </div>
+                                            <div class="books_old_price">
+                                                <div class="old_line">
+                                                    <span class="cash_price">16.</span>
+                                                    <span class="gel">ლ</span>
+                                                </div>
+                                                <span class="price_cash_old">50</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="book_item">
+                            <a href="#">
+                                <div class="book">
+                                    <div class="book_picture">
+                                        <img src="img/book4.png" alt="">
+                                    </div>
+                                    <div class="book_desc">
+                                        <span class="book_logo"></span>
+                                        <div class="book_title">
+                                            ლურჯი ოკეანის სტრატეგია
+                                        </div>
+                                        <div class="book_price">
+                                            <div class="books_new_price">
+                                                <span class="cash_price">14.</span> <span class="price_cash">50</span>
+                                                <span class="gel">ლ</span>
+                                            </div>
+                                            <div class="books_old_price">
+                                                <div class="old_line">
+                                                    <span class="cash_price">16.</span>
+                                                    <span class="gel">ლ</span>
+                                                </div>
+                                                <span class="price_cash_old">50</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="book_item">
+                            <a href="#">
+                                <div class="book">
+                                    <div class="book_picture">
+                                        <img src="img/book3.png" alt="">
+                                    </div>
+                                    <div class="book_desc">
+                                        <span class="book_logo"></span>
+                                        <div class="book_title">
+                                            ლურჯი ოკეანის სტრატეგია
+                                        </div>
+                                        <div class="book_price">
+                                            <div class="books_new_price">
+                                                <span class="cash_price">14.</span> <span class="price_cash">50</span>
+                                                <span class="gel">ლ</span>
+                                            </div>
+                                            <div class="books_old_price">
+                                                <div class="old_line">
+                                                    <span class="cash_price">16.</span>
+                                                    <span class="gel">ლ</span>
+                                                </div>
+                                                <span class="price_cash_old">50</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cls"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="cls"></div>
+        <section class="siaxleebi">
+            <div class="container">
+                <div class="siaxleebi_in product_siaxleebi">
+                    <ul class="tabs2 books_title news_title">
+                        <li class="active" rel="tab1">სიახლეები</li>
+                    </ul>
+                    <div class="news_all">
+                        <div class="news">
+                            <a href="#">
+                                <div class="news_img">
+                                    <img src="img/news-1.png" alt="">
+                                </div>
+                                <div class="news_desc">
+                                    ბიზნესლიტერატურის პროექტი ”ლურჯი ოკეანე” ახალგაზრდების დასაქმების ფესტივალზე იყო წარმოდგენილი
+                                </div>
+                                <div class="date">
+                                    <span class="date_in">26.06.2017</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news">
+                            <a href="#">
+                                <div class="news_img">
+                                    <img src="img/news-4.png" alt="">
+                                </div>
+                                <div class="news_desc">
+                                    ”პალიტრა მედია” და პროექტი ”ლურჯი ოკეანე” ღონისძიების პარტნიორი იყო
+                                </div>
+                                <div class="date">
+                                    <span class="date_in">26.06.2017</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news">
+                            <a href="#">
+                                <div class="news_img">
+                                    <img src="img/news-3.png" alt="">
+                                </div>
+                                <div class="news_desc">
+                                    ბიზნესლიტერატურის პროექტი ”ლურჯი ოკეანე” ახალგაზრდების დასაქმების ფესტივალზე იყო წარმოდგენილი
+                                </div>
+                                <div class="date">
+                                    <span class="date_in">26.06.2017</span>
+                                </div>
+                        </div>
+                        </a>
+                        <div class="news">
+                            <a href="#">
+                                <div class="news_img">
+                                    <img src="img/news-2.png" alt="">
+                                </div>
+                                <div class="news_desc">
+                                    ”პალიტრა მედია” და პროექტი ”ლურჯი ოკეანე” ღონისძიების პარტნიორი იყო
+                                </div>
+                                <div class="date">
+                                    <span class="date_in">26.06.2017</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="cls"></div>
+    
+  
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ლურჯი ოკეანე</title>
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+
+<body>
+    
+    <div id="all">
+        {% include 'header.html' %}
+        <div class="cls"></div>
+        {% block content %}{% endblock content %}
+        <div class="cls"></div>
+        {% include 'footer.html' %}
+        
+    </div>
+</body>
+
+
+
+
+   <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    
+     {% block script %}{% endblock script %}
